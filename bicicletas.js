@@ -19,7 +19,7 @@ function mostrarBicicletas(data) {
 
   contenedor.innerHTML = data.map(b => `
     <div class="bicicleta">
-      <img src="http://api.raulserranoweb.es/imagenes_art/${b.cod}" alt="${b.cod}">
+      <img src="https://api.raulserranoweb.es/imagenes_art/${b.cod}" alt="${b.cod}">
       <p><span class="label">Nombre: </span><span class="dato">${b.nom}</span></p>
       <p><span class="label">Descripción: </span><span class="dato">${b.des}</span></p>
       <p><span class="label">Categoría: </span><span class="dato">${b.cat}</span></p>
