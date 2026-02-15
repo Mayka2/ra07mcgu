@@ -1,7 +1,7 @@
 async function cargarBicicletas(cat = '') {
   try {
     const params = cat ? `?cat=${encodeURIComponent(cat)}` : '';
-    const response = await fetch(`http://api.raulserranoweb.es/rest.php${params}`);
+    const response = await fetch(`https://api.raulserranoweb.es/rest.php${params}`);
     const bicis = await response.json();
     mostrarBicicletas(bicis);
   } catch (error) {
